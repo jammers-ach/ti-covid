@@ -1,0 +1,9 @@
+[Unit]
+Description=Covid reporter
+
+[Service]
+Type=simple
+ExecStart=/home/pi/ti-covid/start.sh
+
+[Install]
+WantedBy=multi-user.target
