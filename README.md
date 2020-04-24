@@ -17,6 +17,7 @@ If the terminal is switched off, there is feedback from the TX to the RX line, w
 
 ![](circuit.png?raw=true)
 
+Additionally the DTR pin was connected to GPIO4 on the Raspberry pi. This acts as the signal which activates the printing.
 
 ## Raspi setup
 
