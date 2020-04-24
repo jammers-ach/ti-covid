@@ -4,6 +4,9 @@ The TI slient745 is a data terminal from 1975. This project connects a raspberry
 
 When the terminal is switched on, the raspi connections to `https://covid19api.com/` and fetches the latest statistics and sends them to the terminal.
 
+![](photo.jpg?raw=true)
+
+
 ## Circuitry
 
 The TI slient 745 has a port on the back for an external modem. This accepts UART at 300 baud and 700
@@ -38,8 +41,8 @@ Requires `python3`
 
 on your raspberry under user `pi`
 
-`
+```
 $ git clone XX
 $ python3 ti-covid/main.py
-`
+```
 
