@@ -9,11 +9,11 @@ When the terminal is switched on, the raspi connections to `https://covid19api.c
 
 ## Circuitry
 
-The TI slient 745 has a port on the back for an external modem. This accepts UART at 300 baud and 700
+The TI slient 745 has a port on the back for an external modem. This accepts UART at 300 baud and 7E1
 
 The signals are inverted so an inverter is needed.
 
-If the terminal is switched off, there is feedback from the TX to the RX line, which can create a loop if you're doing something with this input data. So the inputs are gated with the DTR signal from the modem.
+If the terminal is switched off, there is feedback from the TX to the RX line through the terminal itself, which can create a loop if you're doing something with this input data. So the inputs are gated with the DTR signal from the modem.
 
 ![](circuit.png?raw=true)
 
