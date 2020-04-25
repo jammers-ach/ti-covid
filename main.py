@@ -25,10 +25,15 @@ def main():
         print("Waiting for GPIO")
         GPIO.wait_for_edge(4, GPIO.RISING)
         print("GPIO activated")
-        time.sleep(3)
-        print("Printing message")
-        print_status()
-        time.sleep(5)
+        time.sleep(1)
+        # debounce a little
+        if GPIO.input(4):
+            time.sleep(3)
+            print("Printing message")
+            print_status()
+            time.sleep(5)
+        else:
+            print("bounce..")
 
 
 if __name__ == "__main__":
